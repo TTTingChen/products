@@ -1,7 +1,7 @@
 #檢查檔案是否存在
 import os #operating system
 products = []
-if os.path.isfile('products.csv')#檢查是否在這個程式碼的資料夾裡（相對路徑）
+if os.path.isfile('products.csv'): #檢查是否在這個程式碼的資料夾裡（相對路徑）
 	print('yeah! 找到檔案!')
 	with open('products.csv', 'r', encoding='utf-8') as f:
 		for line in f:
